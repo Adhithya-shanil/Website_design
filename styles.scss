@@ -2,7 +2,9 @@
     margin: 50px 10px 0px 1247px;
     display: flex;
 }
-
+body{
+  margin: 0px;
+}
 a{
     margin: 15px; 
     text-decoration: none;
@@ -83,4 +85,40 @@ a{
     font-size: 18px;
     width: 500px;
     margin-left: 103px;
+  }
+
+  .footer_container{
+    background-color: #F7DA5B;
+    height: 1000px;
+    margin: 100px, 0px, 0px, 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  #want_swag{
+    align-self: center;
+    margin-top: 70px;
+  }
+
+  #join{
+    align-self: center;
+    margin-top: 70px;
+  }
+
+  .duck_block{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 90px;
+    font-size: 34px;
+  }
+
+  #red-text{
+    color: red;
+    margin-top: 10px;
+  }
+
+  #duck-text{
+    width: 1000px;
+    margin-right: 200px;
   }
