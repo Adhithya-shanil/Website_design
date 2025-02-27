@@ -314,4 +314,16 @@ a {
 .join-button:hover {
   background-color: #d63146;
   transform: translate(-50%, -50%) scale(1.05);
+}
+
+.footer_banner {
+  background-color: #0e2b2e;
+  height: 800px;
+  position: relative;
+}
+
+.footer_banner__social_media {
+  position: absolute;
+  top: 135px;
+  right: 66px;
 }/*# sourceMappingURL=style.css.map */
