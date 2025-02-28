@@ -11,12 +11,14 @@ a {
 }
 
 .nav {
-  margin: 50px 10px 0px 1247px;
+  margin-top: 20px;
+  margin-right: 46px;
   display: flex;
+  justify-content: end;
 }
 .nav__link {
   margin: 15px;
-  font-size: 14px;
+  font-size: 20px;
 }
 .nav__button {
   display: flex;
@@ -29,7 +31,7 @@ a {
 }
 .nav__button--login .nav__button-link {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   padding: 0 13px;
 }
 .nav__button--donate {
@@ -39,48 +41,66 @@ a {
   font-size: 20px;
   padding: 0 13px;
 }
+@media screen and (max-width: 1020px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__link {
+    margin: 10px 0;
+  }
+  .nav__button {
+    margin: 15px 0;
+    padding: 10px;
+  }
+}
 
 .hero {
   background-color: #102364;
-  height: 469px;
-  margin: 46px 53px;
+  padding-bottom: 66px;
+  margin: 46px;
   display: flex;
+  border-radius: 10px;
+  position: relative;
 }
 .hero__text {
   margin-left: 103px;
-  padding-top: 70px;
 }
 .hero__title {
   font-family: "Roboto", sans-serif;
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 900;
   color: #fff;
-  width: 795px;
+  width: 960px;
 }
 .hero__description {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 29px;
   color: #fff;
-  width: 500px;
+  width: 688px;
 }
 .hero__image {
-  width: 641px;
-  height: 365px;
-  padding-top: 60px;
-  padding-left: 200px;
+  position: absolute;
+  width: 956px;
+  max-width: 100%;
+  height: auto;
+  top: -5px;
+  right: 61px;
 }
 
 .event {
   display: flex;
-  justify-content: space-around;
-  margin: 10px 0 10px 369px;
+  justify-content: center;
 }
 .event__image {
   margin: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .event__details {
   max-width: 800px;
   padding: 20px;
+  display: block;
 }
 .event__title {
   color: #1a3b44;
@@ -133,15 +153,29 @@ a {
 .event__description {
   line-height: 1.6;
 }
+@media screen and (max-width: 921px) {
+  .event .event {
+    flex-direction: column; /* Stack items */
+  }
+}
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
   gap: 10px;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 30px;
+  margin: 50px auto 40px;
+}
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 674px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .grid__item {
   width: 320px;
