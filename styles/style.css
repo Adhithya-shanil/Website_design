@@ -91,6 +91,7 @@ a {
 .event {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .event__image {
   margin: 30px;
@@ -153,8 +154,8 @@ a {
 .event__description {
   line-height: 1.6;
 }
-@media screen and (max-width: 921px) {
-  .event .event {
+@media screen and (max-width: 910px) {
+  .event {
     flex-direction: column; /* Stack items */
   }
 }
